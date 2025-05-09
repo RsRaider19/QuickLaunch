@@ -1,5 +1,5 @@
 # Quick Launch (Python Source)
-An app to access to frequently used files, folders, and command-line actions
+An application to access frequently used files, folders, and command-line actions
 This README provides information for developers or users who wish to run or modify Quick Launch from the Python source code.
 
 ## Prerequisites
@@ -39,22 +39,12 @@ The `open_path_in_explorer` function handles chained commands:
 3.  **Output Capture:** `subprocess.run` captures the standard output (stdout) and standard error (stderr) of the executed commands.
 4.  **Error Handling:** `subprocess.run` is used with `check=True` to raise an exception if a command fails.  The application displays the output/error messages.
 
-## Creating an Executable (For Developers)
+# Creating an Executable (For Developers)
 
 If you wish to create a standalone executable:
 
 1.  Install PyInstaller: `pip install pyinstaller`
-2.  Run PyInstaller: `pyinstaller --onefile --name="QuickLaunch" Quick_Launcher.py`
+2.  Run PyInstaller: `pyinstaller --onefile --noconsole --icon=cmd_icon.ico --name="QuickLaunch" Path_Launcher.py`
 3.  The executable will be in the `dist` directory.
 
-## Contributing
 
-(Your contribution guidelines)
-
-## License
-
-(Your license)
-
-## Author
-
-(Your name or contact information)
